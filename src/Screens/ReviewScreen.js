@@ -6,14 +6,13 @@ import { SCREEN_CONSTANTS } from './';
 
 export class ReviewScreen extends Component {
   static navigationOptions = ({ navigation }) => ({
-    headerRight:
-      <Button
-        onPress={
-          () => navigation.navigate(SCREEN_CONSTANTS.ID.SettingsScreen)
-        }
+    headerRight: (
+      <Button transparent
+        onPress={ () => navigation.navigate(SCREEN_CONSTANTS.ID.SettingsScreen) }
       >
         <Text>{SCREEN_CONSTANTS.TITLE.SettingsScreen}</Text>
-      </Button>,
+      </Button>
+    )
   });
 
   render() {

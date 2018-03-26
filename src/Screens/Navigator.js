@@ -49,8 +49,18 @@ export default TabNavigator({
           }
         })
       }
+    },{
+      tabBarPosition: 'bottom',
+      tabBarOptions: {
+        //style: tabBarStyle,
+      }
     })
   }
+},
+{
+  navigationOptions: {
+    //tabBarVisible: false,
+  },
 });
 
 
