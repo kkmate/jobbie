@@ -13,7 +13,7 @@ import {
 } from './';
 
 export default TabNavigator({
-  welcome: {
+  [SCREEN_CONSTANTS.ID.WelcomeScreen]: {
     screen: WelcomeScreen,
     navigationOptions: {
       title: SCREEN_CONSTANTS.TITLE.WelcomeScreen
@@ -21,13 +21,13 @@ export default TabNavigator({
   },
   main: {
     screen: TabNavigator({
-      map: {
+      [SCREEN_CONSTANTS.ID.MapScreen]: {
         screen: MapScreen,
         navigationOptions: {
           title: SCREEN_CONSTANTS.TITLE.MapScreen
         },
       },
-      deck: {
+      [SCREEN_CONSTANTS.ID.DeckScreen]: {
         screen: DeckScreen,
         navigationOptions: {
           title: SCREEN_CONSTANTS.TITLE.DeckScreen
@@ -35,20 +35,22 @@ export default TabNavigator({
       },
       review: {
         screen: StackNavigator({
-          review: {
+          [SCREEN_CONSTANTS.ID.ReviewScreen]: {
             screen: ReviewScreen,
             navigationOptions: {
-              title: SCREEN_CONSTANTS.TITLE.ReviewScreen
+              title: SCREEN_CONSTANTS.TITLE.ReviewScreen,
             },
           },
-          settings: {
+          [SCREEN_CONSTANTS.ID.SettingsScreen]: {
             screen: SettingsScreen,
             navigationOptions: {
-              title: SCREEN_CONSTANTS.TITLE.DeckScreen
+              title: SCREEN_CONSTANTS.TITLE.SettingsScreen
             },
-          },
+          }
         })
       }
     })
   }
 });
+
+

@@ -17,6 +17,6 @@ export const SCREEN_CONSTANTS = {
     DeckScreen: 'DeckScreen',
     MapScreen: 'MapScreen',
     ReviewScreen: 'ReviewScreen',
-    SettingsScreen: 'SettingsScreen'
+    SettingsScreen: 'Settings'
   }
 };
