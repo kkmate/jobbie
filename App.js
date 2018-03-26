@@ -5,6 +5,8 @@
  */
 
 import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-navigation';
 
 import MainNavigator from './src/Screens/Navigator';
 type Props = {};
@@ -16,8 +18,15 @@ export default class App extends Component<Props> {
   render() {
 
     return (
-      <MainNavigator />
-      
+      <SafeAreaView style={styles.container}>
+        <MainNavigator />
+      </SafeAreaView>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
