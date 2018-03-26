@@ -7,7 +7,7 @@ import { SCREEN_CONSTANTS } from './';
 const SLIDE_DATA = [
   { text: 'Welcome to jobbie', color: '#006199' },
   { text: 'Find your next job', color: '#006199' },
-  { text: 'Set your location, then swipe away', color: '#006199' }
+  { text: 'Set your location, then swipe away', color: '#006199' },
 ];
 
 export class WelcomeScreen extends Component {
