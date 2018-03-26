@@ -5,26 +5,19 @@
  */
 
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  View
-} from 'react-native';
-import { TabNavigator } from 'react-navigation';
 
-import { WelcomeScreen, SettingsScreen } from './src/Screens';
-
+import MainNavigator from './src/Screens/Navigator';
 type Props = {};
 export default class App extends Component<Props> {
+  constructor() {
+    super();
+  }
+
   render() {
-    const MainNavigator = TabNavigator({
-      welcome: { screen: WelcomeScreen },
-      settings: { screen: SettingsScreen }
-    });
+
     return (
       <MainNavigator />
+      
     );
   }
 }
-
-const styles = StyleSheet.create({
-});

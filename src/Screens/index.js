@@ -4,21 +4,19 @@ export * from './MapScreen';
 export * from './ReviewScreen';
 export * from './SettingsScreen';
 
-/*export const SCREEN_CONSTANTS = {
+export const SCREEN_CONSTANTS = {
   ID: {
-    AboutScreen: 'moodApp.AboutScreen',
-    AuthCodeScreen: 'moodApp.AuthCodeScreen',
-    AuthPhoneScreen: 'moodApp.AuthPhoneScreen',
-    SurveyListScreen: 'moodApp.SurveyListScreen',
-    SurveyScreen: 'moodApp.SurveyScreen',
-    SendingScreen: 'moodApp.SendingScreen'
+    WelcomeScreen: 'jobbie.WelcomeScreen',
+    DeckScreen: 'jobbie.DeckScreen',
+    MapScreen: 'jobbie.MapScreen',
+    ReviewScreen: 'jobbie.ReviewScreen',
+    SettingsScreen: 'jobbie.SettingsScreen'
   },
   TITLE: {
-    AboutScreen: 'About',
-    AuthCodeScreen: 'Code Screen',
-    AuthPhoneScreen: 'Phone Screen',
-    SurveyListScreen: 'Surveys',
-    SurveyScreen: 'Feedback',
-    SendingScreen: 'Textual Feedback'
+    WelcomeScreen: 'WelcomeScreen',
+    DeckScreen: 'DeckScreen',
+    MapScreen: 'MapScreen',
+    ReviewScreen: 'ReviewScreen',
+    SettingsScreen: 'SettingsScreen'
   }
-};*/
+};
