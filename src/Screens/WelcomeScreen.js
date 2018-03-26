@@ -17,7 +17,10 @@ export class WelcomeScreen extends Component {
 
   render() {
     return (
-      <Slides data={SLIDE_DATA} onComplete={this._onSlidesComplete}/>
+      <Slides
+        data={SLIDE_DATA}
+        onComplete={this._onSlidesComplete}
+      />
     );
   }
 }
