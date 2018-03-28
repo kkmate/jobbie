@@ -59,8 +59,9 @@ export default TabNavigator({
 },
 {
   navigationOptions: {
-    //tabBarVisible: false,
+    tabBarVisible: false,
   },
+  lazy: true,
 });
 
 
